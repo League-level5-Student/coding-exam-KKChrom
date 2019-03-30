@@ -21,6 +21,21 @@ public class CodingExamA {
 		 * 
 		 * See the Coding_Exam_A_Demo.jar for an example of what the finished product should look like.
 		 */
-
+		String robots = JOptionPane.showInputDialog("How many robots");
+		String color = JOptionPane.showInputDialog("What color");
+		String sides = JOptionPane.showInputDialog("How many sides");
+		int r = Integer.parseInt(robots);
+		int s = Integer.parseInt(sides);
+		
+		Thread q = new Thread()->;{
+	for(int i =0;i<s;i++)
+	{
+		Robot ro = new Robot();
+		
+		ro.penDown();
+		ro.setAngle(360/s);
+		ro.move(10);
+	}
+		};
 	}
 }

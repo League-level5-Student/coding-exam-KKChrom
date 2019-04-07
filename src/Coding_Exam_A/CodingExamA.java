@@ -26,16 +26,23 @@ public class CodingExamA {
 		String sides = JOptionPane.showInputDialog("How many sides");
 		int r = Integer.parseInt(robots);
 		int s = Integer.parseInt(sides);
+		Robot[] w = new Robot[r];
+		Thread q = new Thread(q)->{
+				for(int i =0;i<w.length;i++)
+				{
+					Robot ro = new Robot();
+					w[i] = ro;
+					w[i].setX(i+(i*w[i].getX()));
+					w[i].setY(i+(i*w[i].getY()));
+					w[i].penDown();
+					w[i].setAngle(360/s);
+					w[i].move(10);
+				};
 		
-		Thread q = new Thread()->;{
-	for(int i =0;i<s;i++)
-	{
-		Robot ro = new Robot();
-		
-		ro.penDown();
-		ro.setAngle(360/s);
-		ro.move(10);
-	}
-		};
-	}
-}
+				
+	
+	
+		{};}}}
+	
+	
+
